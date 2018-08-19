@@ -6,6 +6,13 @@ body {
 .App {
   text-align: center; }
 
+.referral-chain {
+  margin: 40px 0; }
+
+.app-main {
+  display: flex;
+  justify-content: space-around; }
+
 .App-logo {
   height: 200px; }
 

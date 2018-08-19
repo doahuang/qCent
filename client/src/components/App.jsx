@@ -40,15 +40,13 @@ class App extends Component {
             />
             <h1 className="App-title">qCent</h1>
           </header>
-          <Wallet bal={balance} />
-          <p className="App-intro" />
-          <Button primary className="ui primary button">
-            Click Here
-          </Button>
+          <div className="app-main">
+            <Wallet bal={balance} />
 
-          <Account />
+            <Account />
 
-          <ReferralChain players={arr} />
+            <ReferralChain players={arr} />
+          </div>
         </div>
       </div>
     );
