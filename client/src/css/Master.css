@@ -35,3 +35,8 @@ body {
   height: auto;
   background: white;
   width: 100%; }
+
+.recruit {
+  display: flex;
+  margin: 20px;
+  justify-content: center; }

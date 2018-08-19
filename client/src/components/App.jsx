@@ -5,6 +5,7 @@ import { Wallet } from "./wallet";
 import { Nav } from "./nav";
 import { Account } from "./account";
 import { ReferralChain } from "./referralChain";
+import Recruit from './recruit';
 
 class App extends Component {
   state = { st: "hi" };
@@ -41,12 +42,10 @@ class App extends Component {
             <h1 className="App-title">qCent</h1>
           </header>
           <Wallet bal={balance} />
-          <p className="App-intro" />
-          <Button primary className="ui primary button">
-            Click Here
-          </Button>
+          <Recruit />
 
           <Account />
+
 
           <ReferralChain players={arr} />
         </div>
