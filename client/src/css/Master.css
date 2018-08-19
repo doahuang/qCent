@@ -11,7 +11,9 @@ body {
 
 .app-main {
   display: flex;
-  justify-content: space-around; }
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%; }
 
 .App-logo {
   height: 200px; }
@@ -22,6 +24,10 @@ body {
   padding: 20px;
   color: white;
   margin-top: 50px; }
+
+.stuffs {
+  display: flex;
+  justify-content: space-around; }
 
 .App-title {
   font-size: 1.5em; }
@@ -42,3 +48,8 @@ body {
   height: auto;
   background: white;
   width: 100%; }
+
+.recruit {
+  display: flex;
+  margin: 20px;
+  justify-content: center; }

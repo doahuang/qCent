@@ -14,7 +14,9 @@ body {
 
 .app-main {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
+  width: 100%;
   // height: auto;
 }
 
@@ -28,6 +30,11 @@ body {
   padding: 20px;
   color: white;
   margin-top: 50px;
+}
+
+.stuffs {
+  display: flex;
+  justify-content: space-around;
 }
 
 .App-title {
@@ -54,4 +61,10 @@ body {
   height: auto;
   background: white;
   width: 100%;
+}
+
+.recruit {
+  display: flex;
+  margin: 20px;
+  justify-content: center;
 }

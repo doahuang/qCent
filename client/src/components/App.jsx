@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 // import logo from "../logo.svg";
-import { List, Button } from "semantic-ui-react";
+// import { List } from "semantic-ui-react";
 import { Wallet } from "./wallet";
 import { Nav } from "./nav";
 import { Account } from "./account";
 import { ReferralChain } from "./referralChain";
+import { ClaimForm } from "./claimForm";
+import Recruit from "./recruit";
 
 class App extends Component {
   state = { st: "hi" };
@@ -18,13 +20,13 @@ class App extends Component {
       }
     ];
 
-    let players = arr.map(pl => {
-      return (
-        <List.Item className="item" key={pl}>
-          player {pl}
-        </List.Item>
-      );
-    });
+    // let players = arr.map(pl => {
+    //   return (
+    //     <List.Item className="item" key={pl}>
+    //       player {pl}
+    //     </List.Item>
+    //   );
+    // });
 
     let balance = 0;
 
@@ -41,11 +43,18 @@ class App extends Component {
             <h1 className="App-title">qCent</h1>
           </header>
           <div className="app-main">
-            <Wallet bal={balance} />
+            <div className="stuffs">
+              <Wallet bal={balance} />
+              <Recruit />
+            </div>
 
-            <Account />
+            <div className="stuffs">
+              <Account />
 
-            <ReferralChain players={arr} />
+              <ReferralChain players={arr} />
+
+              <ClaimForm />
+            </div>
           </div>
         </div>
       </div>
