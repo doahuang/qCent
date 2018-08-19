@@ -6,6 +6,7 @@ import { Nav } from "./nav";
 import { Account } from "./account";
 
 class App extends Component {
+  state = { st: "hi" };
   render() {
     let arr = [1, 2, 3, 4, 5, 6, 7, 8];
 
@@ -33,7 +34,7 @@ class App extends Component {
           </header>
           <Wallet bal={balance} />
           <p className="App-intro" />
-          <List className="ui divided inverted relaxed list">{players} </List>
+          {/* <List className="ui divided inverted relaxed list">{players} </List> */}
           <Button primary className="ui primary button">
             Click Here
           </Button>
