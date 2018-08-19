@@ -4,11 +4,19 @@ import { List, Button } from "semantic-ui-react";
 import { Wallet } from "./wallet";
 import { Nav } from "./nav";
 import { Account } from "./account";
+import { ReferralChain } from "./referralChain";
 
 class App extends Component {
   state = { st: "hi" };
   render() {
-    let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+    let arr = [
+      {
+        name: "Bob"
+      },
+      {
+        name: "George"
+      }
+    ];
 
     let players = arr.map(pl => {
       return (
@@ -34,12 +42,13 @@ class App extends Component {
           </header>
           <Wallet bal={balance} />
           <p className="App-intro" />
-          {/* <List className="ui divided inverted relaxed list">{players} </List> */}
           <Button primary className="ui primary button">
             Click Here
           </Button>
 
           <Account />
+
+          <ReferralChain players={arr} />
         </div>
       </div>
     );
