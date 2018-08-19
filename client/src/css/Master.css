@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
+
+.App {
+  text-align: center; }
+
+.App-logo {
+  height: 200px; }
+
+.App-header {
+  background-color: #7bcefd;
+  height: 300px;
+  padding: 20px;
+  color: white;
+  margin-top: 50px; }
+
+.App-title {
+  font-size: 1.5em; }
+
+.App-intro {
+  font-size: large; }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+.sticky {
+  padding: 10px 0;
+  top: 0;
+  position: fixed;
+  height: auto;
+  background: white;
+  width: 100%; }
